@@ -1,0 +1,45 @@
+# Mako notification daemon configuration
+# Gruvbox Dark theme
+
+# Position (top-center)
+anchor=top-center
+margin=20
+max-visible=3
+
+# Dimensions
+width=350
+height=150
+padding=15
+
+# Style
+font=FiraCode Nerd Font Mono 11
+background-color=#282828dd
+text-color=#ebdbb2
+border-size=2
+border-color=#b57614
+border-radius=8
+
+# Behavior
+default-timeout=5000
+ignore-timeout=0
+
+# Progress bar
+progress-color=over #689d6a
+
+# Urgency levels
+[urgency=low]
+border-color=#98971a
+background-color=#282828dd
+
+[urgency=normal]
+border-color=#d79921
+background-color=#282828dd
+
+[urgency=critical]
+border-color=#cc241d
+background-color=#cc241d22
+text-color=#fb4934
+default-timeout=0
+
+# Grouping
+group-by=app-name

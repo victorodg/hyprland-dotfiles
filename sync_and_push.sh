@@ -11,6 +11,7 @@ CONFIG_FOLDERS=(
     "kitty"
     "waybar"
     "wofi"
+    "mako"
 )
 
 # --- ETAPA 1: SINCRONIZAÇÃO LOCAL ---

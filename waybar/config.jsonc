@@ -29,15 +29,12 @@
         "format-bluetooth": " {volume}%",
         "format-muted": "  MUTE",
         "format-muted-bluetooth": " MUTE",
-        // "format": "VOL {volume}% {icon}",
-        // "format-bluetooth": "BT {volume}% {icon}",
         "on-click": "pavucontrol"
     },    
 
     "backlight": {
         "device": "intel_backlight",
         "format": "🔆 {percent}%",
-        // "format": "BRT {percent}% {icon}",
         "on-scroll-up": "brightnessctl set 5%+",
         "on-scroll-down": "brightnessctl set 5%-"
     },    
@@ -45,24 +42,20 @@
     "network": {
         "format-wifi": "  {essid} ({signalStrength}%)",
         "format-ethernet": "󰈀  {ipaddr}/{cidr}",
-        // "format-wifi": "{essid} ({signalStrength}%) ",
-        // "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "󰖪",
-        // "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
-    },    
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "on-click": "nm-connection-editor"
+    },
 
     "cpu": {
         "format": " {usage}%",
-        // "format": "CPU {usage}% ",
         "tooltip": false
     },    
 
     "memory": {
         "format": " {}%"
-        // "format": "RAM {}% "
     },
 
     "battery": {
@@ -72,10 +65,13 @@
         },
         "format": "{ {capacity}%",
         "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%"
-        // "format": "BAT {capacity}% {icon}",
-        // "format-charging": "CHR {capacity}% ",
-        // "format-plugged": "PWR {capacity}% "
+        "format-plugged": " {capacity}%"
+    },
+    
+    "custom/notifications": {
+        "format": "🔔",
+        "tooltip": false,
+        "on-click": "makoctl invoke"
     },
     
     "tray": {

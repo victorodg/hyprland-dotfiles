@@ -32,6 +32,7 @@ window#waybar {
 #backlight,
 #language,
 #custom-language,
+#custom-notifications,
 #tray {
     padding: 0 3px;
     margin: 0 5px;
@@ -39,6 +40,11 @@ window#waybar {
 
 #clock {
     color: #689d6a;  /*#83a598 gruvbox blue */
+}
+
+#custom-notifications {
+    color: #fabd2f;  /* gruvbox yellow */
+    font-size: 16px;
 }
 
 #language {
