@@ -38,6 +38,14 @@ window {
     color: #ebdbb2;  /* gruvbox fg */
 }
 
+#img {
+    margin-right: 10px;
+}
+
+#entry {
+    padding: 5px;
+}
+
 #entry:selected {
     background-color: #504945;  /* gruvbox bg2 */
     border-radius: 10px;

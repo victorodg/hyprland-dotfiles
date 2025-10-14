@@ -1,0 +1,8 @@
+width=300
+height=590
+show=drun
+prompt=Search...
+allow_images=true
+image_size=32
+insensitive=true
+columns=1

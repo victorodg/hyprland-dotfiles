@@ -20,7 +20,7 @@ window#waybar {
 
 #workspaces button.active {
     background: #504945;  /* gruvbox bg2 */
-    border-bottom: 3px solid #d79921;  /* gruvbox dark yellow */
+    border-bottom: 3px solid #fabd2f;  /* gruvbox dark yellow */
 }
 
 #clock,
@@ -39,7 +39,7 @@ window#waybar {
 }
 
 #clock {
-    color: #689d6a;  /*#83a598 gruvbox blue */
+    color: #8ec07c;  /*#83a598 gruvbox blue */
 }
 
 #custom-notifications {
@@ -48,35 +48,35 @@ window#waybar {
 }
 
 #language {
-    color: #cc241d;  /* gruvbox red */
+    color: #fb4934;  /* gruvbox red */
 }
 
 #pulseaudio {
-    color: #d65d0e;  /*#fabd2f; gruvbox yellow */
+    color: #fe8019;  /*#fabd2f; gruvbox yellow */
 }
 
 #backlight {
-    color: #d79921;  /*#689d6a gruvbox aqua */
+    color: #fabd2f;  /*#689d6a gruvbox aqua */
 }
 
 #network {
-    color: #98971a;  /*#b8bb26 gruvbox green */
+    color: #b8bb26;  /*#b8bb26 gruvbox green */
 }
 
 #cpu {
-    color: #689d6a;  /*#d3869b gruvbox purple */
+    color: #8ec07c;  /*#d3869b gruvbox purple */
 }
 
 #memory {
-    color: #458588;  /*#fe8019 gruvbox orange */
+    color: #83a598;  /*#fe8019 gruvbox orange */
 }
 
 #battery {
-    color: #b16286;  /*#b8bb26 gruvbox green */
+    color: #d3869b;  /*#b8bb26 gruvbox green */
 }
 
 #battery.charging {
-    color: #b16286;  /*#8ec07c gruvbox aqua */
+    color: #d3869b;  /*#8ec07c gruvbox aqua */
 }
 
 #battery.warning:not(.charging) {

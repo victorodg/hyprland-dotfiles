@@ -5,7 +5,7 @@
     "spacing": 4,
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-center": ["clock"],
-    "modules-right": ["hyprland/language", "pulseaudio", "backlight", "network", "cpu", "memory", "battery", "tray"],
+    "modules-right": ["hyprland/language", "pulseaudio", "backlight", "network", "cpu", "memory", "battery"],
     
     "hyprland/workspaces": {
         "disable-scroll": true,
@@ -65,7 +65,7 @@
         },
         "format": "{ {capacity}%",
         "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%"
+        "format-plugged": " {capacity}%"
     },
     
     "custom/notifications": {
