@@ -1,0 +1,85 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 4,
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["hyprland/language", "pulseaudio", "backlight", "network", "cpu", "memory", "battery", "tray"],
+    
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "on-click": "activate",
+        "format": "{name}"
+    },
+    
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%Y-%m-%d  %H:%M}",
+        "format-alt": "{:%A, %B %d, %Y  %H:%M:%S}"
+    },
+    
+    "hyprland/language": {
+        "format": " {short}"
+    },
+
+    "pulseaudio": {
+        "format": "  {volume}%",
+        "format-bluetooth": " {volume}%",
+        "format-muted": "  MUTE",
+        "format-muted-bluetooth": " MUTE",
+        // "format": "VOL {volume}% {icon}",
+        // "format-bluetooth": "BT {volume}% {icon}",
+        "on-click": "pavucontrol"
+    },    
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "🔆 {percent}%",
+        // "format": "BRT {percent}% {icon}",
+        "on-scroll-up": "brightnessctl set 5%+",
+        "on-scroll-down": "brightnessctl set 5%-"
+    },    
+
+    "network": {
+        "format-wifi": "  {essid} ({signalStrength}%)",
+        "format-ethernet": "󰈀  {ipaddr}/{cidr}",
+        // "format-wifi": "{essid} ({signalStrength}%) ",
+        // "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "󰖪",
+        // "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },    
+
+    "cpu": {
+        "format": " {usage}%",
+        // "format": "CPU {usage}% ",
+        "tooltip": false
+    },    
+
+    "memory": {
+        "format": " {}%"
+        // "format": "RAM {}% "
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{ {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%"
+        // "format": "BAT {capacity}% {icon}",
+        // "format-charging": "CHR {capacity}% ",
+        // "format-plugged": "PWR {capacity}% "
+    },
+    
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    }
+}
