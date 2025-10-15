@@ -32,6 +32,7 @@ window#waybar {
 #backlight,
 #language,
 #custom-language,
+#custom-keyboard-layout,
 #custom-notifications,
 #tray {
     padding: 0 3px;
@@ -47,16 +48,17 @@ window#waybar {
     font-size: 16px;
 }
 
-#language {
+#language,
+#custom-keyboard-layout {
     color: #fb4934;  /* gruvbox red */
 }
 
 #pulseaudio {
-    color: #fe8019;  /*#fabd2f; gruvbox yellow */
+    color: #fe8019;  /*#fabd2f; gruvbox orange */
 }
 
 #backlight {
-    color: #fabd2f;  /*#689d6a gruvbox aqua */
+    color: #fabd2f;  /*#689d6a gruvbox yellow */
 }
 
 #network {
@@ -64,19 +66,19 @@ window#waybar {
 }
 
 #cpu {
-    color: #8ec07c;  /*#d3869b gruvbox purple */
+    color: #8ec07c;  /*#d3869b gruvbox aqua */
 }
 
 #memory {
-    color: #83a598;  /*#fe8019 gruvbox orange */
+    color: #83a598;  /*#fe8019 gruvbox blue */
 }
 
 #battery {
-    color: #d3869b;  /*#b8bb26 gruvbox green */
+    color: #d3869b;  /*#b8bb26 gruvbox purple */
 }
 
 #battery.charging {
-    color: #d3869b;  /*#8ec07c gruvbox aqua */
+    color: #d3869b;  /*#8ec07c gruvbox purple */
 }
 
 #battery.warning:not(.charging) {

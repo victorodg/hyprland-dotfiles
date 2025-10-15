@@ -5,14 +5,46 @@
     "spacing": 4,
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
     "modules-center": ["clock"],
-    "modules-right": ["hyprland/language", "pulseaudio", "backlight", "network", "cpu", "memory", "battery"],
+    // "modules-right": ["custom/keyboard-layout", "pulseaudio", "backlight", "network", "cpu", "memory", "battery"],
+    "modules-right": ["pulseaudio", "backlight", "network", "cpu", "memory", "battery"],
     
     "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
         "on-click": "activate",
         "format": "{name}"
-    },
+        //"format": "{name}{windows}",
+        ////"format": "{windows}",
+        //"format-window-separator": " ",
+        //"window-rewrite-default": "",
+        //"window-rewrite": {
+        //    "class<org.mozilla.firefox>": " -  ",          // Firefox
+        //    "class<kitty>": " -  ",            // Kitty terminal
+        //    "class<code>": " - 󰨞 ",            // VS Code
+        //    "class<nautilus>": " -  ",         // File manager
+        //    "class<discord>": " - 󰙯 ",          // Discord
+        //    "class<spotify>": " -  ",         // Spotify
+        //    "class<steam>": " -  ",           // Steam
+        //    "title<.*nvim.*>": " -  ",         // Neovim
+        //    "class<obsidian>": " - 󱢧 ",         // Obsidian (New Icon)
+        //    "class<com.rtosta.zapzap>": " -  ", // ZapZap (WhatsApp Flatpak)
+        //    "class<org.qbittorrent.qBittorrent>": " - 󰌷 ",      // qBittorrent
+        //    "class<vlc>": " - 󰕼 ",              // VLC
+        //    "class<net.thunderbird.Thunderbird>": " -  " // Thunderbird
+        ////    "class<org.mozilla.firefox>": " ",          // Firefox
+        ////    "class<kitty>": " ",            // Kitty terminal
+        ////    "class<code>": "󰨞 ",            // VS Code
+        ////    "class<nautilus>": " ",         // File manager
+        ////    "class<discord>": "󰙯 ",          // Discord
+        ////    "class<spotify>": " ",         // Spotify
+        ////    "class<steam>": " ",           // Steam
+        ////    "title<.*nvim.*>": " ",         // Neovim
+        ////    "class<obsidian>": "󱢧 ",         // Obsidian (New Icon)
+        ////    "class<com.rtosta.zapzap>": " ", // ZapZap (WhatsApp Flatpak)
+        ////    "class<org.qbittorrent.qBittorrent>": " ",      // qBittorrent
+        ////    "class<vlc>": "󰕼 ",              // VLC
+        ////    "class<net.thunderbird.Thunderbird>": " " // Thunderbird
+        },
     
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
@@ -20,8 +52,16 @@
         "format-alt": "{:%A, %B %d, %Y  %H:%M:%S}"
     },
     
-    "hyprland/language": {
-        "format": " {short}"
+    // "hyprland/language": {
+    //     "format": " {short}"
+    // },
+
+    "custom/keyboard-layout": {
+        "exec": "~/.config/waybar/scripts/keyboard-layout.sh",
+        "return-type": "json",
+        "interval": 1,
+        "format": " {}",
+        "on-click": "niri msg action switch-layout next"
     },
 
     "pulseaudio": {
@@ -63,7 +103,7 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{ {capacity}%",
+        "format": " {capacity}%",
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%"
     },

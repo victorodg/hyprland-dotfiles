@@ -1,6 +1,6 @@
 window {
     margin: 0px;
-    border: 2px solid #b57614;  /* gruvbox dark yellow */
+    border: 2px solid #fabd2f;  /* gruvbox dark yellow */
     border-radius: 15px;
     background-color: rgba(40, 40, 40, 0.95);  /* gruvbox bg0 with opacity */
     font-family: "JetBrainsMono Nerd Font";
@@ -38,7 +38,7 @@ window {
 #entry:selected {
     background-color: #504945;  /* gruvbox bg2 */
     border-radius: 10px;
-    border-bottom: 3px solid #b57614;  /* gruvbox dark yellow */
+    border-bottom: 3px solid #fabd2f;  /* gruvbox dark yellow */
 }
 
 #text:selected {
